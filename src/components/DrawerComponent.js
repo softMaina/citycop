@@ -67,10 +67,10 @@ export default class drawerContentComponents extends Component {
           </TouchableOpacity>
           {/* Notifications */}
           <TouchableOpacity
-            onPress={this.navigateToScreen('Crimes')}
+            onPress={this.navigateToScreen('Crime')}
             style={[
               styles.wrapper,
-              this.props.activeItemKey == 'Crimes'
+              this.props.activeItemKey == 'Crime'
                 ? styles.activeBackgroundColor
                 : null,
             ]}>
@@ -84,7 +84,7 @@ export default class drawerContentComponents extends Component {
               <Text
                 style={[
                   styles.screenTextStyle,
-                  this.props.activeItemKey == 'Crimes'
+                  this.props.activeItemKey == 'Crime'
                     ? styles.selectedTextStyle
                     : null,
                 ]}>
@@ -122,10 +122,10 @@ export default class drawerContentComponents extends Component {
           </TouchableOpacity>
           {/* account */}
           <TouchableOpacity
-            onPress={this.navigateToScreen('Account')}
+            onPress={this.navigateToScreen('Profile')}
             style={[
               styles.wrapper,
-              this.props.activeItemKey == 'Account'
+              this.props.activeItemKey == 'Profile'
                 ? styles.activeBackgroundColor
                 : null,
             ]}>
@@ -133,13 +133,13 @@ export default class drawerContentComponents extends Component {
               <Icon
                 name="person"
                 size={24}
-                color={Colors.primary}
+                color="blue"
                 containerStyle={{marginLeft: 20}}
               />
               <Text
                 style={[
                   styles.screenTextStyle,
-                  this.props.activeItemKey == 'Account'
+                  this.props.activeItemKey == 'Profile'
                     ? styles.selectedTextStyle
                     : null,
                 ]}>

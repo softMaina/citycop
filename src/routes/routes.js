@@ -11,9 +11,7 @@ import drawerContentComponents from '../components/DrawerComponent';
 
 const Home = createStackNavigator(
   {
-    HomeScreen: {
-      screens: HomeScreen,
-    },
+    Home: HomeScreen,
   },
   {
     initialRouteName: 'Home',
@@ -22,9 +20,7 @@ const Home = createStackNavigator(
 );
 const Crime = createStackNavigator(
   {
-    CrimeScreen: {
-      screens: CrimeScreen,
-    },
+    Crime: CrimeScreen,
   },
   {
     initialRouteName: 'Crime',
@@ -33,9 +29,7 @@ const Crime = createStackNavigator(
 );
 const Login = createStackNavigator(
   {
-    LoginScreen: {
-      screens: LoginScreen,
-    },
+    Login: LoginScreen,
   },
   {
     initialRouteName: 'Login',
@@ -45,9 +39,7 @@ const Login = createStackNavigator(
 
 const Profile = createStackNavigator(
   {
-    ProfileScreen: {
-      screens: ProfileScreen,
-    },
+    Profile: ProfileScreen,
   },
   {
     initialRouteName: 'Profile',
@@ -56,12 +48,10 @@ const Profile = createStackNavigator(
 );
 const Settings = createStackNavigator(
   {
-    SettingScreen: {
-      screens: SettingScreen,
-    },
+    Settings: SettingScreen,
   },
   {
-    initialRouteName: 'Setting',
+    initialRouteName: 'Settings',
     headerMode: 'none',
   },
 );
@@ -69,9 +59,9 @@ const Settings = createStackNavigator(
 const SignedIn = createDrawerNavigator(
   {
     Home: Home,
-    Crimes: Crime,
+    Crime: Crime,
     Settings: Settings,
-    Account: Profile,
+    Profile: Profile,
   },
   {
     initialRouteName: 'Home',
@@ -79,4 +69,4 @@ const SignedIn = createDrawerNavigator(
   },
 );
 
-export const AppContainerSignedIn = createAppContainer(SignedIn);
+export default createAppContainer(SignedIn);

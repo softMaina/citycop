@@ -2,7 +2,7 @@ import React from 'react';
 import {View, Text, StyleSheet} from 'react-native';
 import MapView, {PROVIDER_GOOGLE} from 'react-native-maps';
 
-class HomeScreen extends React.Component {
+export default class HomeScreen extends React.Component {
   render() {
     return (
       <View style={styles.container}>
@@ -34,4 +34,3 @@ const styles = StyleSheet.create({
   },
 });
 
-export default HomeScreen;
