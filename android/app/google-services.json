@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "489053014418",
+    "firebase_url": "https://citycop-7d6c1.firebaseio.com",
+    "project_id": "citycop-7d6c1",
+    "storage_bucket": "citycop-7d6c1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:489053014418:android:ce3b7f508857d1548ad94b",
+        "android_client_info": {
+          "package_name": "com.novyapp.citycop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "489053014418-rqf967ac043ev25fhrege80oevitborv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAtLLU0IzfeEvpnf03Pr3cnb7zPkuJ_2aQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "489053014418-rqf967ac043ev25fhrege80oevitborv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
