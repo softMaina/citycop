@@ -20,20 +20,24 @@ export default class drawerContentComponents extends Component {
               source={require('../../assets/pic.jpeg')}
               style={{
                 borderRadius: 50,
-                marginLeft: '7%',
+                marginLeft: '3%',
                 marginBottom: 10,
                 height: 100,
                 width: 100,
+                
               }}
             />
             <Text
               style={{
-                color: '#fff',
-                fontSize: 14,
+                color: '#2C3335',
+                fontSize: 18,
                 marginBottom: 10,
-                marginLeft: '7%',
+                marginLeft: '5%',
+                fontWeight:"bold",
+               
+              
               }}>
-              Uncle Bob
+              Uncle Bob 
             </Text>
           </View>
         </View>
@@ -49,7 +53,7 @@ export default class drawerContentComponents extends Component {
             ]}>
             <View style={styles.screenStyle}>
               <Icon
-                name="dashboard"
+                name="home"
                 size={24}
                 color="blue"
                 containerStyle={{marginLeft: 20}}
@@ -76,7 +80,7 @@ export default class drawerContentComponents extends Component {
             ]}>
             <View style={styles.screenStyle}>
               <Icon
-                name="notifications"
+                name="book"
                 size={24}
                 color="blue"
                 containerStyle={{marginLeft: 20}}
@@ -104,7 +108,7 @@ export default class drawerContentComponents extends Component {
             onPress={this.navigateToScreen('Settings')}>
             <View style={styles.screenStyle}>
               <Icon
-                name="room-service"
+                name="settings"
                 size={24}
                 color="blue"
                 containerStyle={{marginLeft: 20}}
@@ -131,7 +135,7 @@ export default class drawerContentComponents extends Component {
             ]}>
             <View style={styles.screenStyle}>
               <Icon
-                name="person"
+                name="account-circle"
                 size={24}
                 color="blue"
                 containerStyle={{marginLeft: 20}}
@@ -162,7 +166,7 @@ const styles = StyleSheet.create({
   },
   headerContainer: {
     height: '33%',
-    backgroundColor: 'yellow',
+    backgroundColor: '#E74292',
     width: '100%',
     elevation: 9,
   },
@@ -206,5 +210,6 @@ const styles = StyleSheet.create({
     paddingRight: 24,
     borderBottomColor: 'white',
     borderBottomWidth: StyleSheet.hairlineWidth,
+    paddingLeft:20,
   },
 });
